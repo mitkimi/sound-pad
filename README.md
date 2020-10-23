@@ -2,7 +2,7 @@
 
 > 演出音频播放控制器
 
-![主界面](./renderer/assets/demo/main.png)
+![主界面](https://github.com/mitkimi/sound-pad/blob/master/src/renderer/assets/demo/main.png)
 #### 开发者
 
 ``` bash
