@@ -8,6 +8,13 @@
         <mode-selector :mode="'performing'"></mode-selector>
       </div>
     </div>
+    <div class="name-time">
+      <performance-name></performance-name>
+      <time-control></time-control>
+    </div>
+    <div class="sound-player">
+      <sound-player></sound-player>
+    </div>
   </div>
 </template>
 <script src="./main.js"></script>

@@ -1,0 +1,67 @@
+@import '../../../../assets/less/common.less';
+
+.component {
+  .play-progress {
+    padding: 20px 15px;
+    .progress-box {
+      height: 15px;
+      background: @BackgroundColor;
+      border-radius: 8px;
+      overflow: hidden;
+      .played-progress {
+        height: 100%;
+        background: @ErrorColor;
+        opacity: 1;
+      }
+    }
+  }
+  .controller {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .control-item {
+      height: 80px;
+      background: @BackgroundColor;
+      border: 1px solid @BorderColor;
+      border-radius: 8px;
+      padding: 15px;
+      .tips {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .control-button {
+      width: 120px;
+      font-size: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all, .1s;
+    }
+    .active {
+      background: @InfoColor;
+      border: 1px solid @InfoColor;
+      color: #ffffff;
+    }
+    .sound-time {
+      width: 240px;
+      font-size: 24px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .sound-volume {
+      width: 300px;
+    }
+    .sound-info {
+      width: calc(100% - 1000px);
+      .info {
+        margin-top: 5px;
+      }
+    }
+  }
+}

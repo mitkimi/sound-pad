@@ -10,3 +10,15 @@
 .scene .header .logo img {
   height: 30px;
 }
+.scene .name-time {
+  height: 114px;
+  border-bottom: 1px solid #dcdee2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.scene .sound-player {
+  height: 160px;
+  border-bottom: 1px solid #dcdee2;
+}

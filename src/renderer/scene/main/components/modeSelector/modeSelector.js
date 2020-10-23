@@ -8,7 +8,7 @@ export default {
   data () {
     return {
       bufferMode: null,
-      modalShow: true
+      modalShow: false
     }
   },
   methods: {

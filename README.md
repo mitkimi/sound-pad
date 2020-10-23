@@ -1,8 +1,9 @@
-# sound-pad
+# SOUNDPAD
 
-> An electron-vue project
+> 演出音频播放控制器
 
-#### Build Setup
+[主界面](./renderer/assets/demo/main.png)
+#### 开发者
 
 ``` bash
 # install dependencies
@@ -19,7 +20,4 @@ npm run build
 npm run lint
 
 ```
-
 ---
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[45a3e22](https://github.com/SimulatedGREG/electron-vue/tree/45a3e224e7bb8fc71909021ccfdcfec0f461f634) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
