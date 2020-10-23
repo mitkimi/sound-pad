@@ -44,7 +44,17 @@ let rendererConfig = {
       },
       {
         test: /\.less$/,
-        use: ['vue-style-loader', 'css-loader', 'less-loader']
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'less-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: path.resolve(__dirname,'../src/renderer/assets/less/common.less'),//改路径为存放less全局变量的路径
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,

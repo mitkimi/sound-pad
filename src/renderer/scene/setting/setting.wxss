@@ -1,0 +1,76 @@
+.scene .header {
+  height: 60px;
+  border-bottom: 1px solid #dcdee2;
+  position: relative;
+}
+.scene .header .name {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.scene .header .search {
+  width: 680px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scene .main-body {
+  height: calc(100vh - 80px);
+  padding-top: 20px;
+  position: relative;
+}
+.scene .main-body .menu {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 300px;
+}
+.scene .main-body .menu .list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.scene .main-body .menu .list-item .icon {
+  margin-right: 20px;
+  font-size: 18px;
+}
+.scene .main-body .menu .list-item .list-name {
+  font-size: 14px;
+}
+.scene .main-body .menu .backwords {
+  margin-top: 30px;
+}
+.scene .main-body .container {
+  width: 680px;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: scroll;
+}
+.scene .main-body .container .body-container {
+  margin-bottom: 24px;
+}
+.scene .main-body .container .body-container .title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.scene .main-body .container .body-container .panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.scene .main-body .container .body-container .panel .select-name {
+  line-height: 30px;
+}
+.scene .main-body .container .body-container .panel .link {
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.modal-body .selector {
+  margin: 20px auto;
+  width: 400px;
+  background: #f8f8f9;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal-body .selector .select-item {
+  width: 100%;
+}
+.modal-body .selector .select-item .box {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.modal-body .selector .select-item .box .icon {
+  font-size: 30px;
+}
+.modal-body .selector .select-item .box .name {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.modal-body .selector .select-item .active {
+  color: #ffffff;
+}
+.modal-body .selector .performance .active {
+  background: #19be6b;
+}
+.modal-body .selector .modify .active {
+  background: #2b85e4;
+}

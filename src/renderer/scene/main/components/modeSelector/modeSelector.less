@@ -1,0 +1,43 @@
+.modal-body {
+  .selector {
+    margin: 20px auto;
+    width: 400px;
+    background: #f8f8f9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .select-item {
+      width: 100%;
+      .box {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .icon {
+          font-size: 30px;
+        }
+        .name {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+      }
+      .active {
+        color: #ffffff;
+      }
+    }
+    .performance {
+      .active {
+        background: #19be6b;
+      }
+    }
+    .modify {
+      .active {
+        background: #2b85e4;
+      }
+    }
+  }
+}
