@@ -39,10 +39,18 @@
   cursor: pointer;
   transition: all, 0.1s;
 }
+.component .controller .control-button:active {
+  background: #e8eaec;
+  border: 1px solid #e8eaec;
+}
 .component .controller .active {
   background: #2db7f5;
   border: 1px solid #2db7f5;
   color: #ffffff;
+}
+.component .controller .active:active {
+  background: #2b85e4;
+  border: 1px solid #2b85e4;
 }
 .component .controller .sound-time {
   width: 240px;

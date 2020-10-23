@@ -40,11 +40,19 @@
       align-items: center;
       cursor: pointer;
       transition: all, .1s;
+      &:active {
+        background: @DividerColor;
+        border: 1px solid @DividerColor;
+      }
     }
     .active {
       background: @InfoColor;
       border: 1px solid @InfoColor;
       color: #ffffff;
+      &:active {
+        background: @DarkPrimaryColor;
+        border: 1px solid @DarkPrimaryColor;
+      }
     }
     .sound-time {
       width: 240px;
