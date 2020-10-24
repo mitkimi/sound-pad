@@ -1,7 +1,7 @@
 <template>
   <div class="component">
     <Button type="primary" v-if="mode === 'modify'" @click="handleShowModal">编排模式</Button>
-    <Button type="success" v-if="mode === 'performing'" @click="handleShowModal">演出模式</Button>
+    <Button type="success" v-if="mode === 'performance'" @click="handleShowModal">演出模式</Button>
     <Modal
       v-model="modalShow"
       title="选择演出模式"

@@ -10,8 +10,6 @@ export default {
       choose: null
     }
   },
-  mounted () {
-  },
   methods: {
     handleChooseButton (button) {
       this.choose = button
@@ -25,7 +23,7 @@ export default {
         this.$Message.warning('需要给节目单设置名称，请先取一个名字吧～')
         return
       }
-      console.log(name)
+      // console.log(name)
       const data = JSON.parse(JSON.stringify(defaultData))
       data.name = name
       localStorage.current = JSON.stringify(data)
@@ -33,6 +31,7 @@ export default {
         title: '新节目单已创建',
         desc: '请开始编排节目吧～您的编排将每分钟缓存一次到本地。编排结束后，记得保存文件～'
       })
+      this.$store.dispatch('SELECT_MODE_ACTION', { mode: 'modify' }) // 设置为编排模式
       setTimeout(() => {
         this.$router.push({
           path: '/'

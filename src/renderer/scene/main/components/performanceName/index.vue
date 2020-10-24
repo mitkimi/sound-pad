@@ -2,7 +2,7 @@
   <div class="component">
     <div class="performance-mode">
       <div class="name">
-        刘谦 2012 全国魔术巡演第 100 场 - 北京站
+        {{name}}
       </div>
     </div>
     <div class="modify-mode"></div>

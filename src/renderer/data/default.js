@@ -19,25 +19,40 @@ const performancePadTemplate = {
   id: uuidv4.toString(),
   name: '',
   file: null,
-  in: 'in',
-  out: 'out',
+  duration: 0,
+  in: 0,
+  out: 0,
+  loop: false,
+  track: 0, // 播放音轨：主音轨-0，从音轨-1
   volume: 100,
   remark: ''
 }
 
 function makeDefaultData () {
-  const performanceList = performaceListTemplate
+  const performanceList = JSON.parse(JSON.stringify(performaceListTemplate))
   for (let i = 0; i < 20; i += 1) {
     const performancePad = JSON.parse(JSON.stringify(performancePadTemplate))
     performanceList.children.push(performancePad)
   }
   const defaultData = JSON.parse(JSON.stringify(defaultDataTemplate))
-  defaultData.list = performanceList
+  defaultData.list.push(performanceList)
   return defaultData
 }
 
 const defaultData = makeDefaultData()
 
+function makeListItem () {
+  const performanceList = JSON.parse(JSON.stringify(performaceListTemplate))
+  for (let i = 0; i < 20; i += 1) {
+    const performancePad = JSON.parse(JSON.stringify(performancePadTemplate))
+    performanceList.children.push(performancePad)
+  }
+  return performanceList
+}
+
+const defaultListItem = makeListItem()
+
 module.exports = {
-  defaultData
+  defaultData,
+  defaultListItem
 }
