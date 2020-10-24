@@ -8,13 +8,40 @@
   padding: 8px;
   cursor: pointer;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .18);
+  position: relative;
   .name {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 24px;
     .time {
       float: right;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 28px;
+    }
+  }
+  .remark {
+    font-size: 12px;
+  }
+  .pop-handle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    background: @SuccessColor;
+  }
+  .content-slot {
+    width: 320px;
+    .key-value {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 25px;
+      line-height: 25px;
+      .key {
+        width: 100px;
+      }
+      .value {
+        width: calc(100% - 100px);
+      }
     }
   }
 }

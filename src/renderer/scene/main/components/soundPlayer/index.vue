@@ -11,7 +11,7 @@
       <div class="control-item control-button" v-if="!player.isPlaying" @click="handlePlayToggle">
         <Icon type="md-play" />
       </div>
-      <div class="control-item control-button active" v-else @click="handlePlayToggle">
+      <div class="control-item control-button" v-else @click="handlePlayToggle">
         <Icon type="md-pause" />
       </div>
       <div class="control-item control-button">

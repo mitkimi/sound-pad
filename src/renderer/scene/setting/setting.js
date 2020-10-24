@@ -13,9 +13,7 @@ export default {
   },
   methods: {
     handleBack () {
-      this.$router.push({
-        path: '/'
-      })
+      this.$router.go(-1)
     },
     windowOpen (url) {
       // 打开网站

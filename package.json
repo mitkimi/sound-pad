@@ -26,6 +26,7 @@
     "axios": "^0.18.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.4",
+    "uuid-js": "^0.7.5",
     "view-design": "^4.4.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",

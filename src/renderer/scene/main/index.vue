@@ -4,6 +4,7 @@
       <div class="logo">
         <img src="@/assets/SOUNDPAD.png" />
         <router-link to="/setting">设置</router-link>
+        <router-link to="/welcome">欢迎</router-link>
       </div>
       <div class="system">
         <mode-selector :mode="'performing'"></mode-selector>

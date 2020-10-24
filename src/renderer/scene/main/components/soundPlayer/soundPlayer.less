@@ -25,7 +25,10 @@
       background: @BackgroundColor;
       border: 1px solid @BorderColor;
       border-radius: 8px;
-      padding: 15px;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .tips {
         font-size: 16px;
         font-weight: bold;
@@ -34,9 +37,6 @@
     .control-button {
       width: 120px;
       font-size: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
       cursor: pointer;
       transition: all, .1s;
@@ -46,20 +46,17 @@
       }
     }
     .active {
-      background: @InfoColor;
-      border: 1px solid @InfoColor;
+      background: @SubColor;
+      border: 1px solid @SubColor;
       color: #ffffff;
       &:active {
-        background: @DarkPrimaryColor;
-        border: 1px solid @DarkPrimaryColor;
+        background: @ContentColor;
+        border: 1px solid @ContentColor;
       }
     }
     .sound-time {
       width: 240px;
       font-size: 24px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
     }
     .sound-volume {

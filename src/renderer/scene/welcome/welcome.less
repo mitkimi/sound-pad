@@ -1,0 +1,80 @@
+@import '../../assets/less/common.less';
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+  background: @TitleColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .welcome-button-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .create-performance {
+      display: flex;
+      flex-direction: row;
+      .create-form {
+        background: @BackgroundColor;
+        width: 0;
+        height: 150px;
+        border-radius: 28.65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: all, 500ms;
+        white-space: nowrap;
+        .tips {
+          margin: 25px 25px 0 25px;
+        }
+        .name {
+          margin: 0 25px;
+        }
+        .submit {
+          margin: 0 25px 25px 25px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .welcome-button {
+      height: 150px;
+      width: 150px;
+      background: @BackgroundColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      border-radius: 19.1%;
+      transition: all, .1s;
+      cursor: pointer;
+      &:hover {
+        background: @SuccessColor;
+        color: #ffffff;
+      }
+      .icon {
+        font-size: 48px;
+        margin-bottom: 5px;
+      }
+    }
+    .active {
+      background: @SuccessColor;
+      color: #ffffff;
+    }
+  }
+  .copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

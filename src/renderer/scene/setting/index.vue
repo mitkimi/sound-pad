@@ -44,18 +44,19 @@
           <List border>
             <ListItem>
               <div class="panel">
-                <div class="name select-name">语言</div>
+                <div class="name select-name">语 言</div>
                 <div class="value">
                   <Select v-model="setting.normal.language" style="width:200px">
                     <Option value="chinese" :key="0">简体中文</Option>
-                    <Option value="english" :key="1">English</Option>
+                    <!-- <Option value="english" :key="1">English</Option>
+                    <Option value="japanese" :key="2">日本語</Option> -->
                   </Select>
                 </div>
               </div>
             </ListItem>
             <ListItem>
               <div class="panel">
-                <div class="name select-name">地区</div>
+                <div class="name select-name">地 区</div>
                 <div class="value">
                   <Select v-model="setting.normal.locale" style="width:200px">
                     <Option value="china" :key="0">中国大陆</Option>
