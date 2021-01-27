@@ -22,8 +22,8 @@
         <performance-list :list="performance.list"></performance-list>
       </div>
       <div class="pad-container">
-        <div class="pad-item" v-for="(item, index) in performance.list[activeListItem].children" :key="index">
-          <performance-pad :item="item" :index="index" :activeListItem="activeListItem" @setPad="setPad"></performance-pad>
+        <div class="pad-item" v-for="(item, index) in performance.list[activeListItem - 1].children" :key="index">
+          <performance-pad :item="item" :index="index" :activeListItem="activeListItem"></performance-pad>
         </div>
       </div>
     </div>

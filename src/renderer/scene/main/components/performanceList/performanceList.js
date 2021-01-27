@@ -8,6 +8,7 @@ export default {
   },
   data () {
     return {
+      // isModifying: -1
       // active: 0 // 当前高亮
       // mode: 'performance' // 当前模式
     }
@@ -18,6 +19,9 @@ export default {
     },
     mode () {
       return this.$store.state.system.mode
+    },
+    isModifying () {
+      return this.$store.state.system.isModifying
     }
   },
   mounted () {
@@ -32,6 +36,12 @@ export default {
       // 新增一个
       this.list.push(defaultListItem)
       console.log(defaultListItem)
+    },
+    handleModifyName (id) {
+      this.$store.dispatch('SET_MODIFYING_ACTION', { isModifying: id }) // 存进vuex
+    },
+    handleBlurInput () {
+      this.$store.dispatch('SET_MODIFYING_ACTION', { isModifying: null }) // 存进vuex
     },
     handleMoveTrash (id) {
       // 删除一个

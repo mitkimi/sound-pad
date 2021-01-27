@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     activeListItem () {
-      return this.$store.state.main.activeListItem
+      return this.$store.state.main.activeListItem || 0
     }
   },
   created () {
@@ -37,10 +37,10 @@ export default {
   mounted () {
     this.init()
     clearInterval(this.timer)
-    this.timer = setInterval(() => {
-      this.saveToLocal()
-      this.$Message.success('已保存进缓存')
-    }, 1000 * 60)
+    // this.timer = setInterval(() => {
+    //   this.saveToLocal()
+    //   // this.$Message.success('已保存进缓存')
+    // }, 1000 * 5)
   },
   methods: {
     init () {
@@ -54,7 +54,6 @@ export default {
         this.performance = data
         console.log('data', data)
       } catch (e) {
-        this.$Message.error('节目单文件已损坏，请不要修改节目单文件')
         this.$router.push({
           path: '/welcome'
         })
@@ -63,12 +62,6 @@ export default {
     },
     saveToLocal () {
       mergeDataToLocal(this.performance, 'current')
-    },
-    setPad (activeListItem, index, obj) {
-      // this.performance.list[activeListItem].children[index]
-      for (const key in obj) {
-        this.performance.list[activeListItem].children[index][key] = obj[key]
-      }
     }
   }
 }

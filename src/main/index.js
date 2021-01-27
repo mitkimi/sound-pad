@@ -23,7 +23,10 @@ function createWindow () {
     fullscreen: true,
     height: 563,
     useContentSize: true,
-    width: 1000
+    width: 1000,
+    webPreferences: {
+      nodeIntegration: true
+    }
   })
 
   mainWindow.loadURL(winURL)
@@ -32,6 +35,17 @@ function createWindow () {
     mainWindow = null
   })
 }
+
+// 阻止进入休眠
+// app.setAppUserModelId(process.execPath)
+// const ipcMain = require('electron').ipcMain
+// ipcMain.on('prevent-power-sleep', (event, args) => {
+//   const id = powerSaveBlocker.start('prevent-display-sleep')
+//   if (args) {
+//     powerSaveBlocker.stop(id);
+//   }
+//   console.log('powerSaveBlocker start>>>' + powerSaveBlocker.isStarted(id))
+// })
 
 app.on('ready', createWindow)
 

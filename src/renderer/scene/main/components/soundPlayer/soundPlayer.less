@@ -1,8 +1,15 @@
 @import '../../../../assets/less/common.less';
 
 .component {
+  .wave-box {
+    background: #f8f8f9;
+    border-radius: 8px;
+    padding: 0 10px;
+    overflow: hidden;
+  }
   .play-progress {
-    padding: 20px 15px;
+    padding: 15px;
+    position: relative;
     .progress-box {
       height: 15px;
       background: @BackgroundColor;
@@ -13,6 +20,14 @@
         background: @ErrorColor;
         opacity: 1;
       }
+    }
+    .cover {
+      // background: rgba(0,0,0,.2);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
     }
   }
   .controller {

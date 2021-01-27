@@ -9,6 +9,10 @@
   cursor: pointer;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .18);
   position: relative;
+  transition: all, 200ms;
+  &:active {
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .18);
+  }
   .name {
     font-size: 14px;
     line-height: 24px;
@@ -44,4 +48,7 @@
       }
     }
   }
+}
+.active {
+  background: @SuccessColor;
 }

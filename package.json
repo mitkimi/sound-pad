@@ -23,16 +23,19 @@
     "postinstall": "npm run lint:fix"
   },
   "dependencies": {
+    "abortcontroller-polyfill": "^1.5.0",
     "axios": "^0.18.0",
+    "music-metadata": "^7.5.0",
     "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.4",
+    "sass-loader": "^10.0.5",
     "uuid-js": "^0.7.5",
     "view-design": "^4.4.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
-    "vue-router": "^3.0.1",
+    "vue-router": "^3.4.8",
     "vuex": "^3.0.1",
-    "vuex-electron": "^1.0.0"
+    "vuex-electron": "^1.0.0",
+    "wavesurfer.js": "^4.1.1"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -76,7 +79,7 @@
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^15.2.4",
+    "vue-loader": "^15.9.5",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.15.1",
